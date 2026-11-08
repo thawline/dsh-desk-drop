@@ -1,0 +1,48 @@
+{
+  "name": "dsh-desk-drop",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "把交付卡片和消息图片拖到 Windows 桌面，并附上「打开所在文件夹 / 复制路径 / 另存为」",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "drag-and-drop",
+    "desktop",
+    "windows"
+  ],
+  "author": "thawline",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thawline/dsh-desk-drop.git"
+  },
+  "homepage": "https://github.com/thawline/dsh-desk-drop#readme",
+  "bugs": {
+    "url": "https://github.com/thawline/dsh-desk-drop/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "external": []
+    }
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
